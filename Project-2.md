@@ -11,8 +11,8 @@ As of the time of this research, there are 898 Pokemon, including
 regional variants and Mega Evolutions. Pokemon are differentiated from
 one another not only on appearances, but by a plethora of both
 categorical and numerical variables. Categorical variables include
-weight, height, and typing, which includes both a primary and - for some
-- a secondary typing, with 18 different types of Pokemon to choose from.
+weight, height, and typing, which includes both a primary and, for some, 
+a secondary typing, with 18 different types of Pokemon to choose from.
 Pokemon are not only different combinations of types and sizes, but also
 have specific base statistics that determine their fighting abilities in
 comparison to one another.
