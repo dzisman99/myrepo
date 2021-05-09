@@ -110,7 +110,7 @@ pokemonByType = pokemon %>% # Create a data set with Pokemon types and mean base
 ggplot(pokemonByType, aes(x = value, y = meanTotal, fill = value)) + geom_col() + geom_text(aes(label = n), vjust  = -.5) + labs (x = "Type", y = "Mean Base Stat Total")
 ```
 
-![](Project-2_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117585015-d00d7e80-b0d5-11eb-9d10-e3e1db664c5e.png)
 
 The numbers above each column in the above bar plot indicates how many
 Pokemon are present for each type. Although there are only 1048 Pokemon
@@ -141,7 +141,7 @@ pokemon %>%
   geom_boxplot(aes(fill = as.factor(value)))
 ```
 
-![](Project-2_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117585021-dbf94080-b0d5-11eb-9dfc-c437ec3d9871.png)
 
 ``` r
 # Check for normality
@@ -416,7 +416,7 @@ ggplot(sample1, aes(TOTAL, fill = type)) +
   theme(legend.position = "none")
 ```
 
-![](Project-2_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117585106-398d8d00-b0d6-11eb-816c-86b2b548c41a.png)
 
 ``` r
 # Calculate the mean difference between the two conditions
@@ -461,7 +461,7 @@ Fs <- replicate(5000,{
 hist(Fs, prob=T); abline(v = 5.067, col = "red"); abline(v = 2.945, col = "red")
 ```
 
-![](Project-2_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117585114-41e5c800-b0d6-11eb-8dcc-75e72e364d8e.png)
 
 This randomization test shows that there is a fairly normal distribution
 of F-statistics in the random sample. Like in the real sample, there are
@@ -520,14 +520,14 @@ summary(fit)
 plot(fit, which = 1)
 ```
 
-![](Project-2_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117585127-4f9b4d80-b0d6-11eb-874e-d87791b4f5a9.png)
 
 ``` r
 # Q-Q plot to check for normality of the residuals
 plot(fit, which = 2)
 ```
 
-![](Project-2_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117585129-53c76b00-b0d6-11eb-9f42-1b2828c97fee.png)
 
 This linear regression model shows that, using the standardized
 `logTOTAL` values, every type significantly affects base stat total. The
@@ -757,7 +757,7 @@ ROC %>%
   labs(title = "Relationship Between Sensitivity and Specificity")
 ```
 
-![](Project-2_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117585153-72c5fd00-b0d6-11eb-8e0d-41601d9f1173.png)
 
 ``` r
 # Instead plot Sensitivity (TPR) against 1 - Specificity (FPR): this is called a ROC curve!
@@ -771,7 +771,7 @@ ROC %>%
   scale_x_continuous(limits = c(0,1))
 ```
 
-![](Project-2_files/figure-gfm/unnamed-chunk-11-2.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117585155-78234780-b0d6-11eb-93c4-7b23bfcfddf9.png)
 
 ``` r
 library(plotROC)
@@ -787,7 +787,7 @@ ROCplot = ggplot(pokemon) +
 ROCplot
 ```
 
-![](Project-2_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117585161-7f4a5580-b0d6-11eb-8fff-2e4ca94d4b0c.png)
 
 ``` r
 # Calculate area under curve (AUC)
