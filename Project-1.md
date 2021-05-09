@@ -332,7 +332,7 @@ ggplot(melted_cormatrix, aes(x=Var1, y=Var2, fill=`Correlation Coefficient`)) + 
   geom_tile() + labs(x = "Variable 1", y = "Variable 2", title = "Correlation Heat Map")
 ```
 
-![](Project-1_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117584777-735d9400-b0d4-11eb-8a56-02059c001dd4.png)
 
 The heat map depicted above explains exactly what was mentioned earlier
 in that when variables from different seasons are compared, they have a
@@ -352,7 +352,7 @@ ggplot(baseball, aes(x = AVG_2019, y = AVG_2020, col = (OBP_2019 + OBP_2020)/2))
 
     ## `geom_smooth()` using formula 'y ~ x'
 
-![](Project-1_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117584810-9d16bb00-b0d4-11eb-8e4c-3810c3d54277.png)
 
 A simple scatter plot provides insight into the by-player trends from
 one season to the next. The general trend is that a player who recorded
@@ -382,7 +382,7 @@ ggplot(baseball_with_sample_size, aes(x = Team, y = AVG_2019, fill = sample_size
        y = "2019 Batting Average", fill = "# Batters on Team") # Kept x as "Team"
 ```
 
-![](Project-1_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117584829-b881c600-b0d4-11eb-8615-aee900150da7.png)
 
 ``` r
 # Creates a second violin wrapping box plot for the 2020 season
@@ -393,7 +393,7 @@ ggplot(baseball_with_sample_size, aes(x = Team, y = AVG_2020, fill = sample_size
        y = "2020 Batting Average", fill = "# Batters on Team") # Kept x as "Team"
 ```
 
-![](Project-1_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117584831-c0416a80-b0d4-11eb-9737-e7c238e1b855.png)
 
 A violin wrapping box plot is effective for multiple reasons when
 substantiating the case of the sign stealing, and its subsequent
@@ -457,7 +457,7 @@ pca_data = pca_data %>%
 ggplot(pca_data, aes(x = PC1, y = PC2, color = Team)) + geom_point() # Scatter plot of pca_data by team
 ```
 
-![](Project-1_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117584856-e5ce7400-b0d4-11eb-8ddd-0c7ac25ebc8b.png)
 
 The scatter plot of the PCA data shows that no one team is significantly
 distinct from another in any way. This substantiates the idea that the
@@ -479,8 +479,9 @@ pca_data2 = pca_data2 %>%
 fviz_contrib(pca, choice = "ind", axes = 1:2, top = 10)
 ```
 
-![](Project-1_files/figure-gfm/unnamed-chunk-16-1.png)<!-- --> The ten
-individuals who contribute most to the PCs are (in descending order): 1.
+![image](https://user-images.githubusercontent.com/83376196/117584879-05659c80-b0d5-11eb-85a9-40e2089e6af4.png)
+
+The ten individuals who contribute most to the PCs are (in descending order): 1.
 Franklin Baretto (Athletics) 2. Erik Kratz (Giants) 3. Braden Bishop
 (Mariners) 4. Anthony Bemboom (Angels) 5. Beau Taylor (Athletics) 6.
 Cesar Puello (Angels) 7. Brendan Rodgers (Rockies) 8. Jake Fraley
@@ -490,14 +491,14 @@ Cesar Puello (Angels) 7. Brendan Rodgers (Rockies) 8. Jake Fraley
 fviz_pca_biplot(pca)
 ```
 
-![](Project-1_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117584881-0bf41400-b0d5-11eb-965b-b29e80dd5c66.png)
 
 ``` r
 # Creates a PCA variable plot
 fviz_pca_var(pca, col.var = "black", repel = T) # repel parameter prevents variable names from touching on the graph
 ```
 
-![](Project-1_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![image](https://user-images.githubusercontent.com/83376196/117584884-131b2200-b0d5-11eb-9e4b-fa809bcf108f.png)
 
 All 4 of the numeric variables used have a high quality of
 representation. Additionally, the variables are grouped together by
